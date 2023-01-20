@@ -3,7 +3,7 @@ class Rekins:
 #Klase reprezentē rēķinu par kastīti ar specifisku vārdu.
 # Klases konstruktors. Ar šo metodi tiek inicializēts objekts.
     darba_samaksa = 15
-    PVN = 21
+    PVN = 21 # VVVV
     def __init__(self, klients: str, veltijums: str, izmers: list, materiala_cena: float):
     #Datuinicializācija.  	
 	# Īpašības definēšana 
