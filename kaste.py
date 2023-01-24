@@ -21,6 +21,12 @@ class Rekins:
         self.__kastites_cena = self.__kastites_tilpums/3 * self.materiala_cena
     def __produkta_cena(self): #definē funkciju, kas aprēķina produkta cenu
         self.__produkta_cena = self.__kastites_cena + self.__veltijuma_cena
+    def __darba_samaksa(self):
+        return self.__darba_samaksa
+    def __PVN_summa(self): #definē funkciju, kas aprēķina summu ar PVN
+        self.__PVN_summa = (self.__produkta_cena + self.__darba_samaksa) * self.PVN / 100
+    def rekina_summa(self): #definē funkciju, kas aprēķina rēķina summu
+        self.rekina_summa = self.__produkta_cena + self.__darba_samaksa + self.__PVN_summa
 
 
 #ka1 = Rekins("Jansons","Plaģiāta pārbaude",[12,12,250],2.5)
